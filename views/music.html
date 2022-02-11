@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* .g{ */
+      /* padding: 3px; */
+      /* border: black solid 2px ; */
+      /* float:left; */
+      /* margin: 10px; */
+      /* } */
+      .a {
+        background-color: cadetblue;
+      }
+      #a:hover {
+        background-color: rgb(13, 63, 63);
+      }
+      #a {
+        background-color: darkturquoise;
+        padding: 6px;
+        border: darkmagenta solid 6px;
+        border-radius: 3px;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        text-decoration: crimson;
+      }
+      .j:hover,
+      .b:hover {
+        background-color: deeppink;
+      }
+      .b {
+        text-align: center;
+        font-size: 50px;
+        border: slategray solid 3px;
+        padding: 20px;
+        padding-bottom: inherit;
+        background-color: blueviolet;
+        border-radius: 10px;
+        font-style: italic;
+        text-decoration-line: underline;
+      }
+      .j {
+        text-align: center;
+        padding: 10px;
+        border: #252222 solid 1px;
+        text-decoration-line: underline;
+        margin: 5px;
+        border-radius: 4px;
+        background-color: rgb(245, 76, 76);
+        font-style: italic;
+      }
+      @media screen and (min-width: 1250px) {
+        .g {
+          float: left;
+          padding: 6px;
+          border: rgb(245, 245, 245) solid 5px;
+          margin: 18px;
+        }
+        .now{
+            display: flex;
+            justify-content: space-between;
+            /* flex-direction: row; */
+            /* align-items: center; */
+        }
+      }
+      .g {
+        background-color: rgb(36, 33, 33);
+      }
+
+      /* .g{
+                padding:4px;
+                border:rgb(245, 245, 245) solid 5px;
+                margin: 13px;
+                
+                
+                border-radius: 5px;
+                
+                
+            }  */
+      .c {
+        /* clip-path: circle(45% at 30% 30%); */
+        border: 2px solid red;
+        border-radius: 80%;
+        margin-right: 80px;
+        float: left;
+      }
+      /* .d{
+                float:left;
+                padding-left: 60px; */
+
+      /* } */
+      /* .e{
+                padding-right: 60px;
+                float: left;
+               */
+
+      /* } */
+      .f {
+        float: right;
+      }
+      #m {
+        color: brown;
+      }
+
+    </style>
+  </head>
+
+  <body class="a">
+    <h1 class="b">Welcome!</h1>
+    <!-- <img src="C:\Users\shashi kant\Downloads\ee9c87f3-8d15-4efb-b83a-e0fa5aab73da.jpg" width="50px" height="100px" class="c"> -->
+    <!-- <img class="f" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8nOZGPhtNf34bdj87Qv7I-Ckf3YO6ykDzsA&usqp=CAU"width="100px" height="100px">  -->
+
+    <!-- <img class="e" src="data:image/jpeg;base64,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" width="100px"> -->
+
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdqsiz3eF2V6Toy4AwpG7nZZ5pPRGahHVDw&usqp=CAU"width="100px" height="100px" class="d"> -->
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1u-rEpVce80e6xgwnA86Qk-60fNY_l0dzIA&usqp=CAU"width="100px" height="100px" class="d"> -->
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlmTI6xXfuM36niibk8l9u4NHy6CCLTQtPg&usqp=CAU"width="100px" height="100px"class="d"> -->
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlCYKdh4bYGWAB2eflbFjZGaAb2IzkRhrDOQ&usqp=CAU"width="100px"height="100px"class="d"> -->
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUGYs4yXkVraJwMrfQKJjePbDQTmWo7BXpmA&usqp=CAU"width="100px"height="100px" class="d"> -->
+    <div class="now">
+        
+        <box1 class="g">
+          <h2 class="j">SONG TYPES 1</h2>
+    
+          <ul id="m">
+            <div id="p1">
+              
+              <li id="q">
+                1
+                <iframe
+                  width="100%"
+                  height="80"
+                  src="https://www.youtube-nocookie.com/embed/hgi2MYAFgE8?start=37"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <li id="q">
+                2
+                <iframe
+                  width="100%"
+                  height="80"
+                  src="https://www.youtube-nocookie.com/embed/bzW9fmwcmG4?start=37"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <li id="q">
+                3
+                <iframe
+                  width="100%"
+                  height="85"
+                  src="https://www.youtube.com/embed/OkmNXy7er84"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <li id="q">
+                4
+                <iframe
+                  src="https://open.spotify.com/embed/track/0IQRRlpomabOlzy39mcmmq?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                5
+                <iframe
+                  src="https://open.spotify.com/embed/track/57jOEZtoLQK4zF2x55bdkp?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                6
+                <iframe
+                  src="https://open.spotify.com/embed/track/6vuMdb0E8buJeSHArN3dXk?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                7
+                <iframe
+                  src="https://open.spotify.com/embed/track/7ofWUKeNCUw1P64ArIwG9b?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                8
+                <iframe
+                  src="https://open.spotify.com/embed/track/4obyqyCX0Vx839PTsz1OGf?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                9
+                <iframe
+                  src="https://open.spotify.com/embed/track/68iBMrMRc1rg4eAxJbvxch?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                10
+                <iframe
+                  src="https://open.spotify.com/embed/track/5E5RX343eu1LijzItigWJA?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                11
+                <iframe
+                  src="https://open.spotify.com/embed/track/5O932cZmzOZGOGZz9RHx20?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                12
+                <iframe
+                  src="https://open.spotify.com/embed/track/2U0BLmYoSESYOdwMxW2yA9?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              
+            </div>
+            <li class="btn"><div ><button id="a" onclick="togglehide1()">HIDE/SHOW1</button></div></li>
+            
+            
+          </ul>
+        </box1>
+        <box2 class="g">
+          <h2 class="j">SONG TYPES 2</h2>
+          <ul id="m">
+            <div id="p2">
+              <li id="q">
+                1
+                <iframe
+                  width="100%"
+                  height="80"
+                  src="https://www.youtube-nocookie.com/embed/zaCbuB3w0kg?start=37"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <!-- <li id="q">2
+                            <iframe width="100%" height="80" src="https://www.youtube-nocookie.com/embed/f6vY6tYvKGA?start=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+                        </li> -->
+              <li id="q">
+                3
+                <iframe
+                  width="100%"
+                  height="80"
+                  src="https://www.youtube.com/embed/2mLcebzCxw4?start=37"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <!-- <li id="q">4
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GHktbjONjAs?start=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li> -->
+              <li id="q">
+                5
+                <iframe
+                  src="https://open.spotify.com/embed/track/2plj6f8TqOF0YNuHd2VzJD?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                6
+                <iframe
+                  src="https://open.spotify.com/embed/track/6X3FjTFOKsj7FQk2rd0gPv?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                7
+                <iframe
+                  src="https://open.spotify.com/embed/track/3s3J70eRpRH2hcYq4mEXTJ?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                8
+                <iframe
+                  src="https://open.spotify.com/embed/track/7h24KIgBhiyzbYnxsGzevk?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                9
+                <iframe
+                  src="https://open.spotify.com/embed/track/17uI7afUaul1hCzMTF9txd?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                10
+                <iframe
+                  src="https://open.spotify.com/embed/track/1HbmeBqRlEk54KK8gxQqbZ?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                11
+                <iframe
+                  src="https://open.spotify.com/embed/track/6E9UwSfT80age2xknoMS7Y?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                12
+                <iframe
+                  src="https://open.spotify.com/embed/track/2rOnSn2piaqLAlYjtfUBlY?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+            </div>
+            <button id="a" onclick="togglehide2()">HIDE/SHOW2</button>
+          </ul>
+        </box2>
+        <box3 class="g">
+          <h2 class="j">SONG TYPES 3</h2>
+          <ul id="m">
+            <div id="p3">
+              <li id="q">
+                1
+                <iframe
+                  width="100%"
+                  height="85"
+                  src="https://www.youtube.com/embed/O4YEtMj1B50?start=37"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <li id="q">
+                2
+                <iframe
+                  width="100%"
+                  height="85"
+                  src="https://www.youtube.com/embed/rLZffYqkX8Q"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen=""
+                ></iframe>
+              </li>
+              <li id="q">
+                3
+                <iframe
+                  src="https://open.spotify.com/embed/track/7wW9scVNLYFLsmBb1yAUmS?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                4
+                <iframe
+                  src="https://open.spotify.com/embed/album/1xXv2wox60JAkIKUl8QwWp?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                5
+                <iframe
+                  src="https://open.spotify.com/embed/album/272PUgKnBEw7SrJSClYfXz?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                6
+                <iframe
+                  src="https://open.spotify.com/embed/track/7m4CgL81VVIHaaiSxyH922?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                7
+                <iframe
+                  src="https://open.spotify.com/embed/track/0TkquWzzuxcrwbCWlTrKYF?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                8
+                <iframe
+                  src="https://open.spotify.com/embed/track/6q9XTgfWilsnyiFofvYrIF?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                9
+                <iframe
+                  src="https://open.spotify.com/embed/track/3f0wz6zcA7XkQiGm0qNF5r?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                10
+                <iframe
+                  src="https://open.spotify.com/embed/track/1UWacd8x8tPPwmrPB1MoBI?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+              <li id="q">
+                11
+                <iframe
+                  src="https://open.spotify.com/embed/track/7tl1En7BCSnD6Qb5OGlEIE?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
+              </li>
+            </div>
+            <button id="a" onclick="togglehide3()">HIDE/SHOW3</button>
+          </ul>
+        </box3>
+    <script src="/music.js"></script>
+  </body>
+</html>

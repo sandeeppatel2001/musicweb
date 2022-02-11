@@ -1,0 +1,22 @@
+{
+  "name": "musicfolder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeeppatel2001/musicweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeeppatel2001/musicweb/issues"
+  },
+  "homepage": "https://github.com/sandeeppatel2001/musicweb#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
