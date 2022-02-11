@@ -3,7 +3,7 @@ const app = express();
 const fs = require("fs");
 const path = require("path");
 const home = fs.readFileSync("./views/music.html");
-
+const port = process.env.PORT || 4000;
 // const musicapp = path.join(__dirname, "/views");
 // app.set("view engine", "html");
 // app.set("views", "musicapp");
@@ -11,7 +11,7 @@ const home = fs.readFileSync("./views/music.html");
 app.get("/", (req, res) => {
   res.end(home);
 });
-app.listen(4000, () => {
+app.listen(port, () => {
   console.log("sandeep");
 });
 // const http = require("http");
