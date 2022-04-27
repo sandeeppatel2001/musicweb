@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.end(home);
 });
 app.listen(port, () => {
-  console.log("sandeep");
+  console.log("sandeep", port);
 });
 // const http = require("http");
 // const fs = require("fs");
